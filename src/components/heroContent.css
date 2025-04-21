@@ -1,0 +1,65 @@
+
+.heroContent__content img{
+    filter: drop-shadow(5px 5px 60px rgba(188, 187, 187, 0.444));
+
+
+}
+
+.heroContent__content {
+    display: grid; /* Usamos Grid para la disposición general */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    grid-template-rows: auto auto auto; /* Filas automáticas según el contenido */
+    gap: 20px; /* Espacio entre las celdas de la cuadrícula */
+    padding: 20px; /* Espacio alrededor del contenido */
+    align-items: center; /* Centra verticalmente los elementos en sus celdas */
+  }
+  
+  h1 {
+    grid-column: 1 / -1; /* Ocupa ambas columnas */
+    text-align: center; /* Centra el texto del título */
+  }
+  
+  .heroContent__img {
+    width: 80%; /* La imagen ocupa el 80% del ancho de su celda */
+    max-width: 300px; /* Ancho máximo para que no se vea demasiado grande en pantallas grandes */
+    justify-self: center; /* Centra horizontalmente la imagen en su celda */
+  }
+  
+  p {
+    justify-self: start; /* Alinea el texto a la izquierda de su celda */
+  }
+  
+  button {
+    justify-self: start; /* Alinea el botón a la izquierda de su celda */
+    /* Añade estilos adicionales para el botón si lo deseas */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media query para pantallas más pequeñas (ejemplo) */
+  @media (max-width: 768px) {
+    .heroContent__content {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+      text-align: center; /* Centra el texto en general */
+    }
+  
+    h1 {
+      text-align: center; /* Asegura que el título esté centrado */
+    }
+  
+    .heroContent__img {
+      justify-self: center; /* Centra la imagen */
+    }
+  
+    p {
+      justify-self: center; /* Centra el texto */
+    }
+  
+    button {
+      justify-self: center; /* Centra el botón */
+    }
+  }
