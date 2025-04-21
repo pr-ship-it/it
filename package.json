@@ -1,0 +1,21 @@
+{
+  "name": "my-app-digital",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "magic-string": "^0.30.17",
+    "preact": "^10.26.4"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
+    "vite": "^6.3.1"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
